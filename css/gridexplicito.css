@@ -1,0 +1,24 @@
+/* esta clase habla sobre el grid explicito*/
+.grid-explicit {
+    display: grid;
+    /*grid de 3x3*/
+    grid-template-columns: 50% 100px 1fr;
+    grid-template-rows: 2rem 20vh 31%;
+    /*grid de 5x4*/
+    grid-template-columns: repeat(5, 20%);
+    /*5 columnas de 20%*/
+    grid-template-rows: repeat(4, auto);
+    /*grid de 4x4 con porcentaje en auto*/
+    grid-template-columns: repeat(4, 25%);
+    /*5 columnas de 20%*/
+    grid-template-rows: repeat(4, 1fr);
+    /*con 1fr*/
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    /*grid de 4 colums x 5rows*/
+    grid-template-columns: 20% repeat(2, 30%) 20%;
+    /*repeat solo cuando las columnas sean del mismo tamaño*/
+
+    grid-template-rows: repeat(5, auto);
+
+}
